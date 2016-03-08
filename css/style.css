@@ -257,6 +257,40 @@ header {
   color: #fff;
 }
 
+#centered {
+  width: 80%;
+  margin: 50px auto 0;
+}
+
+.send {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input,
+textarea {
+  font-family: sans-serif;
+  font-weight: 250;
+  width: 100%;
+  margin: 8px 0;
+  text-indent: 1em;
+  padding: 10px 0;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+}
+
+input[type="submit"] {
+  background-color: #ffd710;
+  color: black;
+  border: 2px solid black;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .quote {
   background-color: #000;
 }
