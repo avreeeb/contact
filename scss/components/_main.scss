@@ -182,7 +182,25 @@ header {
 	margin: 0;
 }
 
+.billboard {
+margin: inherit;
+background-image: url(../images/contact-images/banner-web.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
+background-color: none;
+overflow: hidden;
+position: relative;
+height: 18rem;
+width: 100%rem;
+color: #fff;
+}
 
+.contact-h1 {
+  font-size: 3.2807rem;
+  line-height: 0.3154;
+  padding-top: 8rem;
+}
 
 
 
