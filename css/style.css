@@ -8,6 +8,11 @@
   scale: 1;
 }
 
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+
 @-webkit-viewport {
   width: device-width;
   scale: 1;
@@ -20,6 +25,7 @@
 
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -84,9 +90,7 @@ header {
   position: absolute;
   left: 50%;
   top: 48%;
-  -webkit-transform: translate(-50%, -110%);
-      -ms-transform: translate(-50%, -110%);
-          transform: translate(-50%, -110%);
+  transform: translate(-50%, -110%);
 }
 
 .logo-img {
@@ -183,6 +187,11 @@ header {
   padding-right: .2em;
 }
 
+.black {
+  background-color: #000000;
+  margin: 0;
+}
+
 .quote {
   background-color: #000;
 }
@@ -231,6 +240,32 @@ footer a:hover {
 footer small {
   color: #fff;
 }
+
+
+
+.billboard {
+margin: inherit;
+background-image: url(../images/contact-images/banner-web.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
+background-color: none;
+overflow: hidden;
+position: relative;
+height: 18rem;
+width: 100%rem;
+color: #fff;
+}
+
+.contact-h1 {
+  font-size: 3.2807rem;
+  line-height: 0.3154;
+  padding-top: 8rem;
+}
+
+
+
+
 
 @media only screen and (min-width: 18em) {
   .donate {
@@ -290,16 +325,12 @@ footer small {
     width: 100%;
     height: 100%;
     position: relative;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     transition: all 300ms ease-in-out;
     z-index: 1001;
   }
   .site-wrapper[data-state="slide-open"] .sliding-canvas {
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   .site-wrapper[data-state="slide-open"] {
     overflow: visible;
@@ -386,30 +417,25 @@ body.script .navigation {
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .grid-bottom {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  align-items: flex-end;
 }
 
 .grid-middle {
   -webkit-align-items: center;
   -ms-align-items: center;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
-  -ms-flex-align: stretch;
-      align-items: stretch;
+  align-items: stretch;
 }
 
 .opera-only :-o-prefocus, .grid {
@@ -1369,15 +1395,13 @@ body.script .navigation {
 .content-fill {
   -ms-flex-grow: 2;
   -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-      flex-grow: 2;
+  flex-grow: 2;
 }
 
 .content-shrink {
   -ms-align-self: center;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  align-self: center;
 }
 
 html {
